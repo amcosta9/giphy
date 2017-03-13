@@ -143,7 +143,7 @@ $("#add-category").on("click", function(event){
     } else {
     // pushes user input to categories array
     categories.push(input);
-    $("#category-input").empty();
+    $("#category-input").val(" ");
     // call renderButtons function
     renderButtons();
     }
