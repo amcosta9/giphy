@@ -14,12 +14,12 @@ function displayGif() {
     if (plusCategory == "Surprise+Me") {
         surpriseClicked = true;
         $("#gif-view").empty();
-            queryUrl = "http://api.giphy.com/v1/gifs/random?api_key=" + key;
+            queryUrl = "https://api.giphy.com/v1/gifs/random?api_key=" + key;
             console.log(queryUrl);
             pushGifs();
     } else {
         // building query url using category var and key
-        queryUrl = "http://api.giphy.com/v1/gifs/search?q=" + plusCategory + "&limit=10&api_key=" + key + "&offset=" + rando;
+        queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + plusCategory + "&limit=10&api_key=" + key + "&offset=" + rando;
         console.log(queryUrl);
         $("#gif-view").empty();
         pushGifs();
